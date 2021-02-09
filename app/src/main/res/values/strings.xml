@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Easy Eat</string>
+    <string name="cart_detail">CART DETAIL</string>
+    <string name="clear_all">Clear All</string>
+    <string name="complete_order">COMPLETE ORDER</string>
+    <string name="multiplier">X</string>
+    <string name="back_to_vitrin">BACK </string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="aboutus">The Easy Eat app helps customers to taste their favourite dishes from favourite restaurants staying at home </string>
+    <string name="delete_all_orders">Are you sure you want to delete all orders?</string>
+    <string name="complete_order_question">"Are you sure you want to complete order?</string>
+    <string name="cart_clean">Your cart is as clean as the first day.</string>
+    <string name="sent_order">Your order has been successfully completed. :)</string>
+    <string name="failed_order">Something went wrong. :(</string>
+    <string name="sending_order">Your order is being completed, please wait.</string>
+    <string name="username_title">Username</string>
+    <string name="username">"@easyeat"</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="login_successfully">Login Successfully</string>
+    <string name="login_failed">Login Failed !!</string>
+    <string name="update_failed">Update Failed !!</string>
+    <string name="update_successfully">Update Successfully !!</string>
+    <string name="label_buy_now">Buy Now</string>
+
+
+    <string name="order_success_message">Your order has been placed!You will receive a notification shortly</string>
+
+
+</resources>

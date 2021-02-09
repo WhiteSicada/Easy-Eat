@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerCommande"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_book"
+            android:text="Ma commande"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/restaurantSection"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/headerCommande"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/chef" />
+        <TextView
+            android:id="@+id/restaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_book"
+            android:text="Restaurtant :"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/restaurantSection"
+        android:id="@+id/commandeList"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"/>
+
+    <LinearLayout
+        android:id="@+id/totalSection"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/restaurantSection"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/totalitems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_book"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/actionSectionCommande1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/totalSection"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/backToOrders"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Cancel"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bg_button_rounded"/>
+        <Button
+            android:id="@+id/nextToPaiment"
+            android:text="Next"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_button_rounded"/>
+
+    </LinearLayout>
+
+</LinearLayout>

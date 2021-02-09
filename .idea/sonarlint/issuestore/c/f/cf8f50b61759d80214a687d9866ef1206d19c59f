@@ -1,0 +1,20 @@
+
+R	java:S1108"=This class has 10 parents which is greater than 5 authorized.(Á™šÄ
+¤
+java:S1186Ã"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(­úÛÿÿÿÿÿ8Ç„Ã€ö.
+d
+java:S2142û"FEither re-interrupt this method or rethrow the "InterruptedException".(üŸ´Â8–°€ö.
+Ÿ
+java:S1186¾"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Û“šú8Ç„Ã€ö.
+e
+java:S1854‹"GRemove this useless assignment to local variable "tempSubCategoryList".(‚Ç±8–°€ö.
+¤
+java:S1186ò"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À˜Ğ¡şÿÿÿÿ8–°€ö.
+Y
+java:S1854‘";Remove this useless assignment to local variable "itemMap".(È ­Ë8–°€ö.
+c
+java:S1854"@Remove this useless assignment to local variable "tempItemList".(ÏÀ¬—úÿÿÿÿ8–°€ö.
+¤
+java:S1186ı"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(áá„üÿÿÿÿ8–°€ö.
+¤
+java:S1186‚"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8–°€ö.
