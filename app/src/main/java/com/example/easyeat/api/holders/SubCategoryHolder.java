@@ -1,11 +1,9 @@
-package com.example.easyeat.Api.Holders;
+package com.example.easyeat.api.holders;
 
-public class ItemHolder {
+public class SubCategoryHolder {
     private int id;
     private int categoryId;
-    private int subCategoryId;
     private String name;
-    private double unitPrice;
 
     public int getId() {
         return id;
@@ -19,10 +17,6 @@ public class ItemHolder {
         return categoryId;
     }
 
-    public int getSubCategoryId() {
-        return subCategoryId;
-    }
-
     public String getName() {
         return name;
     }
@@ -31,7 +25,4 @@ public class ItemHolder {
         this.name = name;
     }
 
-    public double getUnitPrice() {
-        return unitPrice;
-    }
 }

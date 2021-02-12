@@ -16,7 +16,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.easyeat.deliveryman.DeliveryActivity;
-import com.example.easyeat.menuactivity.ProfileActivity;
 import com.example.easyeat.payment.PaymentModel;
 
 public class PostOrderPayment extends AppCompatActivity {

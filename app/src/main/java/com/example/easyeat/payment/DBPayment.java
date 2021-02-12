@@ -61,8 +61,7 @@ public class DBPayment  extends SQLiteOpenHelper {
         values.put(COL_8 , paymentModel.getComment());
         values.put(COL_9 , paymentModel.getStatus());
         long result = db.insert(TABLE_NAME , null , values);
-        if (result == -1)return false;
-        else return true;
+        return (result != -1);
     }
 
     public Boolean updatePlacedOrder(String id) {

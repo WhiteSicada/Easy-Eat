@@ -1,4 +1,4 @@
-package com.example.easyeat.Api.Holders;
+package com.example.easyeat.api.holders;
 
 public class CategoryHolder {
     private int id;

@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 .enableAutoManage(this,this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
                 .build();
-        btnGoogle=(Button)findViewById(R.id.btnGoogle);
+        btnGoogle= findViewById(R.id.btnGoogle);
         btnGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,10 +62,10 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         });
 
 
-        usernameLogin = (EditText) findViewById(R.id.usernameLogin);
-        mPassword = (EditText) findViewById(R.id.passwordLogin);
-        mLoginBtn = (Button) findViewById(R.id.btnLogin);
-        linkToRegister = (TextView) findViewById(R.id.linkToRegister);
+        usernameLogin =  findViewById(R.id.usernameLogin);
+        mPassword =  findViewById(R.id.passwordLogin);
+        mLoginBtn =  findViewById(R.id.btnLogin);
+        linkToRegister =  findViewById(R.id.linkToRegister);
         progressBar = findViewById(R.id.progressBar);
 
         linkToRegister.setOnClickListener(new View.OnClickListener() {

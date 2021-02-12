@@ -43,18 +43,11 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(COL_3 , email);
         values.put(COL_4 , password);
         Boolean checkuser = checkUsername(username);
-        if(checkuser==true) {
-            return false;
-        }
-        else{
+        if (Boolean.FALSE.equals(checkuser)){
             long result = db.insert(TABLE_NAME , null , values);
-            if(result == -1)
-                return false;
-            else
-                return true;
+            return (result != -1);
         }
-
-
+        return false;
     }
 
     public User checkUser(String username , String password){
@@ -87,12 +80,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public boolean checkUsername(String username){
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor=db.rawQuery("Select * from USER_DATA where USERNAME = ? ",new String[] {username});
-        if(cursor.getCount()>0){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return (cursor.getCount()>0);
     }
 
 
@@ -101,10 +89,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         ContentValues contentValues=new ContentValues();
         contentValues.put("password",password);
         long result=myDB.update(TABLE_NAME,contentValues,"USERNAME=?",new String[]{username});
-        if(result == -1)
-            return false;
-        else
-            return true;
+        return (result != -1);
     }
 
 }

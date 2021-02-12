@@ -1,6 +1,6 @@
 package com.example.easyeat.model;
 
-import com.example.easyeat.Api.Holders.CategoryHolder;
+import com.example.easyeat.api.holders.CategoryHolder;
 
 import java.io.Serializable;
 

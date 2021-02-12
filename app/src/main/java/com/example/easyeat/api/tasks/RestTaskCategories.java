@@ -1,22 +1,24 @@
-package com.example.easyeat.Api.Tasks;
+package com.example.easyeat.api.tasks;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.example.easyeat.Api.Holders.CategoryHolder;
+import com.example.easyeat.api.holders.CategoryHolder;
 
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
-public class RestTaskCategories extends AsyncTask<Void, Void, CategoryHolder[]> {
+public class RestTaskCategories extends AsyncTask<Context, Void, CategoryHolder[]> {
 
 
     @Override
-    protected CategoryHolder[] doInBackground(Void... params) {
+    protected CategoryHolder[] doInBackground(Context... params) {
         CategoryHolder[] categoryHolders = {};
         try {
-            String url = "http://192.168.43.253:8082/allCategories";
-            Log.i("#######",url);
+            String ip = Helper.getConfigValue(params[0], "ip");
+            String url = ip + "allCategories";
+            Log.i("####",url);
             RestTemplate restTemplate = new RestTemplate();
             restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
             return restTemplate.getForObject(url, CategoryHolder[].class);

@@ -4,24 +4,23 @@ import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 
-
+import com.example.easyeat.login.DataBaseHelper;
+import com.example.easyeat.model.User;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
+
 @RunWith(AndroidJUnit4.class)
-public class ExampleInstrumentedTest
-{
+public class LoginTest {
+
     @Test
-    public void useAppContext() throws Exception
-    {
-        // Context of the app under test.
+    public void loginUser() throws Exception{
         Context appContext = InstrumentationRegistry.getTargetContext();
-
-        assertEquals("com.example.easyeat", appContext.getPackageName());
+        DataBaseHelper myDb = new DataBaseHelper(appContext);
+        User user = myDb.checkUser("adnane","adnane");
+        assertEquals("adnane",user.getUsernname());
     }
-
-
 }

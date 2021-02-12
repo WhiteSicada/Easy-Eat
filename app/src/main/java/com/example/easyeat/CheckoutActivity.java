@@ -30,11 +30,11 @@ public class CheckoutActivity extends AppCompatActivity {
         orderList = (ArrayList<Order>) bundleObject.getSerializable("orderList");
         user = (User) bundleObject.getSerializable("user");
 
-        ListView commandeList = (ListView) findViewById(R.id.commandeList);
-        TextView restaurantName = (TextView) findViewById(R.id.restaurantName);
-        TextView totalitems = (TextView) findViewById(R.id.totalitems);
-        Button backToOrders = (Button) findViewById(R.id.backToOrders);
-        Button nextToPaiment = (Button) findViewById(R.id.nextToPaiment);
+        ListView commandeList =  findViewById(R.id.commandeList);
+        TextView restaurantName =  findViewById(R.id.restaurantName);
+        TextView totalitems =  findViewById(R.id.totalitems);
+        Button backToOrders =  findViewById(R.id.backToOrders);
+        Button nextToPaiment =  findViewById(R.id.nextToPaiment);
 
         ArrayList<String> mTitle = new ArrayList<>();
         ArrayList<Double> extendedPrice = new ArrayList<>();
